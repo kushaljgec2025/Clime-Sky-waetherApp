@@ -31,7 +31,7 @@ body{
 .head{
     position: absolute;
     top: 0;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 400;
     font-family: myFirstFont;
     margin:0.5rem;

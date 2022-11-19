@@ -154,7 +154,7 @@ h1.temp {
         .head{
             visibility: hidden;
         }
-    footer{
+        .footer{
             display:none;
         }
   }

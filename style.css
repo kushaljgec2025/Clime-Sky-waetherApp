@@ -154,4 +154,7 @@ h1.temp {
         .head{
             visibility: hidden;
         }
+    footer{
+            display:none;
+        }
   }

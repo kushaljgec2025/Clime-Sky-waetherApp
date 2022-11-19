@@ -163,10 +163,8 @@ h1.temp {
        }
 }
 @media only screen and (max-height: 600px) {
-        .head{
-            visibility: hidden;
+        .head,.footer{
+           display: none;
         }
-        .footer{
-           visibility:hidden;
-        }
-  }
+       
+ }

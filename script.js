@@ -36,4 +36,4 @@ document.querySelector(".search button").addEventListener("click", function () {
 document.querySelector(".searchBar").addEventListener("keyup", function (event) {
     if (event.key == "Enter") { weather.search() }
 })
-weather.fetchWeather('jalpaiguri')
+weather.fetchWeather('kolkata')

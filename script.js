@@ -12,6 +12,7 @@ let weather = {
             .then((data) => this.displayweather(data));
     },
     displayweather: function (data) {
+
         const { name } = data;
         console.log(name);
         const { icon, description } = data.weather[0];
@@ -26,7 +27,7 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity : " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speedn: " + speed + "km/h";
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage = "url('https://picsum.photos/1440/900/?" + name + "')"
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
     },
     search: function () {
         this.fetchWeather(document.querySelector(".searchBar").value);
@@ -47,7 +48,7 @@ if (navigator.geolocation) {
         console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
         var lat = latitude.toString();
         var lng = longitude.toString();
-        var coordinates = ["23.6889", "86.9661"];
+        var coordinates = [lat, lng];
         getCity(coordinates);
         // getAddress("13.0827", "80.2707")
         //   .then(console.log)
